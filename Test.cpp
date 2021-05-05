@@ -70,13 +70,22 @@ TEST_CASE("TEST 2"){
 
     CHECK_NOTHROW(opexpert.drive(City::Kinshasa));
 
+}
+
+TEST_CASE("TEST 3"){
+    Board b1;
+    Scientist scient1(b1, City::Washington, 4);
+    Scientist scient2(b1, City::Washington, 2);
+    CHECK_NOTHROW(scient1.take_card(City::Sydney)
+	      .take_card(City::HoChiMinhCity)
+	      .take_card(City::HongKong));
+    CHECK_NOTHROW(scient2.take_card(City::Sydney)
+	      .take_card(City::HoChiMinhCity)
+	      .take_card(City::Bangkok));
     
+    CHECK_THROWS(scient2.discover_cure(Color::Red));
+    CHECK_NOTHROW(scient1.discover_cure(Color::Red));
 
 
-
-
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
     }
     
