@@ -69,54 +69,14 @@ TEST_CASE("TEST 2"){
     CHECK_THROWS(player.fly_direct(City::Taipei));
 
     CHECK_NOTHROW(player.drive(City::Kinshasa));
+
     
-    
 
 
-}
+
 
     CHECK_EQ(1,1);
     CHECK_EQ(1,1);
     CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-    CHECK_EQ(1,1);
-}
+    }
     
