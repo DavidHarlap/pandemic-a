@@ -98,7 +98,9 @@ const int Board::operator[](City c) const{
 int& Board::operator[](City c){
     return disease_cubes[c];
 }
-                   
+                
+void Board::remove_cures(){ }
+
 ostream& pandemic::operator<<(ostream& os, const Board& b){
     return os;
 }

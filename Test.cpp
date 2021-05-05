@@ -55,20 +55,20 @@ TEST_CASE("TEST 1")
 
 TEST_CASE("TEST 2"){
     Board board;
-    OperationsExpert player {board, City::Atlanta};  // initialize an "operations expert" player on the given board, in Atlanta.
-    player.take_card(City::Johannesburg)
+    OperationsExpert opexpert {board, City::Atlanta};  // initialize an "operations expert" opexpert on the given board, in Atlanta.
+    opexpert.take_card(City::Johannesburg)
         .take_card(City::Khartoum)
         .take_card(City::SaoPaulo)
         .take_card(City::BuenosAires)
         .take_card(City::HoChiMinhCity);
-    CHECK_NOTHROW(player.build());
-    CHECK_NOTHROW(player.drive(City::Washington));
-    CHECK_THROWS(player.drive(City::Madrid));
+    CHECK_NOTHROW(opexpert.build());
+    CHECK_NOTHROW(opexpert.drive(City::Washington));
+    CHECK_THROWS(opexpert.drive(City::Madrid));
 
-    CHECK_NOTHROW(player.fly_direct(City::Johannesburg));
-    CHECK_THROWS(player.fly_direct(City::Taipei));
+    CHECK_NOTHROW(opexpert.fly_direct(City::Johannesburg));
+    CHECK_THROWS(opexpert.fly_direct(City::Taipei));
 
-    CHECK_NOTHROW(player.drive(City::Kinshasa));
+    CHECK_NOTHROW(opexpert.drive(City::Kinshasa));
 
     
 
